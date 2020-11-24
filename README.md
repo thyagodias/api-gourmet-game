@@ -5,11 +5,13 @@ Projeto desenvolvido em Node.js com Express
 Consiste em uma api simples que executa um grafo de busca para encontrar o prato que o cliente pensou.
 
 ### Comandos:
+No diretório do projeto, execute:
+
 Instalação das dependências: `npm install`
 
-Executar servidor: `npm start`
+Executa a aplicação: `npm start`
 
-Após os comandos, o servidor estará executando em `http://localhost:3333`
+Após os comandos, a aplicação estará executando em `http://localhost:3000`
 
 
 ### Rotas:
