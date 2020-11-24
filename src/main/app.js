@@ -1,22 +1,11 @@
 import express from 'express'
 import cors from 'cors'
-import Node from '../models/Node.js'
-import BinarySearchTree from '../services/BinarySearchTree.js'
+import tree from './game.js'
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-
-// Inicializa o jogo
-let tree = new BinarySearchTree();
-tree.root = new Node('massa')
-
-tree.root.right = new Node('macarrao')
-tree.root.right.parent = tree.root
-
-tree.root.left = new Node('bolo')
-tree.root.left.parent = tree.root
 
 // Rota para obter tipos de pratos
 app.get('/kind/:name', (request, response) => {
