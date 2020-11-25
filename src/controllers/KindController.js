@@ -23,7 +23,7 @@ const KindController = {
     const kindSearch = tree.getKind(node)
   
     if (!kindSearch) {
-      return response.status(400).json({ message: 'Categoria encontrado' })
+      return response.status(400).json({ message: 'Tipo não encontrado' })
     }
   
     if (!dish || !kind) {
