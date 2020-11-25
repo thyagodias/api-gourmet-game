@@ -1,12 +1,12 @@
-import express from "express"
-import KindController from "../controllers/KindController.js"
+import express from 'express';
+import KindController from '../controllers/KindController';
 
 const routes = express.Router();
 
-//Rota para obter tipos de pratos
-routes.get("/kind/:name", KindController.show);
+// Rota para obter tipos de pratos
+routes.get('/kind/:name', KindController.show);
 
-//Rota para adicionar novo tipo de prato
-routes.post("/kind/:node",KindController.create);
+// Rota para adicionar novo tipo de prato
+routes.post('/kind/:node', KindController.create);
 
 export default routes;

@@ -1,3 +1,3 @@
-import app from './src/main/app.js'
+import app from './src/main/app';
 
-app.listen(3333)
+app.listen(3333);

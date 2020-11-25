@@ -1,3 +1,3 @@
-import kindRoutes from './kindRoutes.js'
+import kindRoutes from './kindRoutes';
 
-export { kindRoutes }
+export { kindRoutes };

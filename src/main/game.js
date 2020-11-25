@@ -1,15 +1,14 @@
-import Node from '../models/Node.js'
-import BinarySearchTree from '../services/BinarySearchTree.js'
+import Node from '../models/Node';
+import BinarySearchTree from '../services/BinarySearchTree';
 
-let tree = new BinarySearchTree();
+const tree = new BinarySearchTree();
 
-  tree.root = new Node('massa')
-  
-  tree.root.right = new Node('macarrao')
-  tree.root.right.parent = tree.root
-  
-  tree.root.left = new Node('bolo')
-  tree.root.left.parent = tree.root
+tree.root = new Node('massa');
 
+tree.root.right = new Node('macarrao');
+tree.root.right.parent = tree.root;
 
-export default tree
+tree.root.left = new Node('bolo');
+tree.root.left.parent = tree.root;
+
+export default tree;
