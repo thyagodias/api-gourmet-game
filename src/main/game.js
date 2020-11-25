@@ -1,7 +1,7 @@
 import Node from '../models/Node';
-import BinarySearchTree from '../services/BinarySearchTree';
+import SearchTree from '../services/SearchTree';
 
-const tree = new BinarySearchTree();
+const tree = new SearchTree();
 
 tree.root = new Node('massa');
 

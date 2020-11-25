@@ -1,6 +1,6 @@
 import Node from '../models/Node';
 
-class BinarySearchTree {
+class SearchTree {
   constructor() {
     this.root = null;
   }
@@ -13,11 +13,11 @@ class BinarySearchTree {
 
     const father = node.parent;
 
-    if (father.right && father.right.value === root) {
+    if (father.right !== null && father.right.value === root) {
       father.right = kindNode;
     }
 
-    if (father.left && father.left.value === root) {
+    if (father.left !== null && father.left.value === root) {
       father.left = kindNode;
     }
 
@@ -52,4 +52,4 @@ class BinarySearchTree {
   }
 }
 
-export default BinarySearchTree;
+export default SearchTree;
